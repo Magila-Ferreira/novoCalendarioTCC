@@ -1,0 +1,60 @@
+{{body}}
+
+<!-- Navbar -->
+<navbar>
+  <div class="container">
+    <br>
+    <a href="/cadastrados"><button class="btn-button">VOLTAR</button></a>
+    <hr>
+    <h2 class="tituloP mb-3 card-header text-center">Cadastrar calendário: </h2>
+
+  </div>
+</navbar>
+
+<!-- Container CADASTRO -->
+<div class="container btn-evento text-center col-lg-4 col-md-6 col-sm-8">
+
+  <!-- Formulário CADASTRO -->
+  <form action="/cadastrandocalendario" method="POST">
+
+    <!-- Navbar -->
+    <navbar class="shadow-lg rounded">
+      <div class="btn-evento-editar text-center">
+        <h7>Cadastrar calendário</h7>
+      </div>
+    </navbar>
+
+    <!-- Campos -->
+    <div class="card-body text-white m-2">
+
+      <!-- Ano -->
+      <label class="Is-label">
+        <b class="Is-label-text">ANO:</b>
+        <br>
+        <input data-ls-module="charCounter" maxlength="4" name="ano" type="integer" id="w-p"
+          class="form-control-sm numerico text-center" placeholder="" required="required">
+      </label>
+
+      <br><br>
+
+      <!-- Semestre -->
+      <label class="Is-label">
+        <b class="Is-label-text">SEMESTRE:</b>
+        <br>
+        <select name="semestre" class="form-control-lg text-center" required="required">
+          <option value="1">1º semestre</option>
+          <option value="2">2º semestre</option>
+        </select>
+      </label>
+
+      <br><br>
+
+      <!-- Button -->
+      <button class="btn-button" type="submit">CADASTRAR</button>
+    </div>
+  </form>
+</div>  
+
+
+
+

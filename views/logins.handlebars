@@ -1,0 +1,40 @@
+{{body}}
+
+<!-- Formulário LOGINS -->
+<div class="card-border shadow-lg p-5 rounded">
+  <a href="/cadastrados"><button class="btn-button">VOLTAR</button></a>
+  <hr>
+
+  <div class="card-header text-center">
+    <h7>Lista de LOGINS:</h7>
+  </div>
+
+  <!-- Estrutura do LOGIN -->
+  <div class="container-fixed">
+    <div class="text-center">
+      <table class="table table-bordered card-header-logins">
+
+        <tr class="diaSemana">
+          <th scope="col">RM</th>
+          <th scope="col">Senha</th>
+          <th scope="col">DELETAR</th>
+        </tr>
+
+        <tbody>
+          {{#each logins}}
+          <tr>
+            <td>
+              <h6 class="text-center">{{RM}}</h6>
+            </td>
+            <td>
+              <h6 class="text-center">{{senha}}</h6>
+            </td>
+            <td><a href="/del/{{id}}"><img class="trash-login text-center" src="/img/trash.png" alt="lixo"><img></a>
+            </td>            
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>  
+  </div>
+</div>

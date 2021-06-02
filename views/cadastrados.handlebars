@@ -1,0 +1,57 @@
+{{body}}
+
+<div class="container">
+  <br>
+  <a href="/adm"><button class="btn-button">VOLTAR</button></a>
+  <a href="/cadastrar"><button class="btn-button-ir">CADASTRAR</button></a>
+  <hr>
+
+  <!-- Principal -->
+  <div class="card border mb-3 shadow-lg p-3 mb-5 bg-white rounded">
+
+    <!-- Header -->
+    <div class="card-header text-center">
+      <h7>Lista de calendários cadastrados - ETEC</h7>
+    </div>
+
+    <!-- Colunas -->
+    <div class="row">
+
+      <!-- Col_1 -->
+      <div class="card-body text-dark col-lg-4 col-md-4 col-sm-12">
+        <img class="col-5 img-calendar" id="calendar" src="./img/iconCalendar.png" alt="camera">
+      </div>
+
+      <!-- Col_2 -->
+      <div class="container col-lg-6 col-md-8 col-sm-12 ml text-center">
+        <div class="card-body text-dark">
+          <div class="row">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">ANO</th>
+                  <th scope="col">SEMESTRE</th>
+                  <th scope="col">ADICIONAR</th>
+                  <th scope="col">EXCLUIR</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each calendarios}}
+                <tr>
+                  <td>{{ano}}</td>
+                  <td>{{semestre}}</td>
+                  <td><a href="/teste"><button class="btn-button">+ EVENTOS</button></a></td>
+                  <td><a href="/delet/{{id}}/{{ano}}"><button class="btn-button-ir">DELETAR</button></a></td>
+                </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div> <!-- Fim do Container formulário -->
+    </div>
+    <a href="/logins">
+      <i class="fas fa-user-lock"></i>
+    </a>
+  </div>
+</div>
