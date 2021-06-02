@@ -1,55 +1,66 @@
-header{
+header {
     background-image: url('../img/cover02.jpg');
     background-color: rgba(0, 147, 233, 0.7) #0093E9;
     background-image: linear-gradient(281deg, rgba(0, 147, 233, 0.7) 0%, rgba(128, 208, 199, 0.7) 100%), url('../img/cover02.jpg');
-    padding:  60px 60px 100px 60px;
+    padding: 60px 60px 100px 60px;
     background-size: cover;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-  header i{
+header i {
     font-size: 90px;
     margin-right: 20px;
-  }
+}
 
-  footer{
+footer {
     background-image: url('../img/cover002.jpg');
     background-color: rgba(0, 147, 233, 0.7) #0093E9;
     background-image: linear-gradient(281deg, rgba(0, 147, 233, 0.7) 0%, rgba(128, 208, 199, 0.7) 100%), url('../img/cover002.jpg');
-    padding:  60px 60px 100px 60px;
+    padding: 60px 60px 100px 60px;
     background-size: cover;
-  }
-  
-  footer i{
+}
+
+footer i {
     font-size: 40px;
     margin-top: 10px;
-  }
+}
 
-  .card-tip i {
-    font-size: 40px; 
-  }
+.card-tip i {
+    font-size: 40px;
+}
 
-  .card-body{
+.card-body {
     text-align: center;
-    align-content: center; 
-    
-  }
+    align-content: center;
+}
 
-  .tabela-cursos{
+.tabela-cursos {
     margin-left: 300px;
     font-size: 20px;
     width: 40%;
     height: 50%;
-  }
+}
 
-  body{
+body {
     background-color: rgba(0, 147, 233, 0.7) #0093E9;
     background-image: linear-gradient(281deg, rgba(0, 147, 233, 0.7) 0%, rgba(128, 208, 199, 0.7) 100%);
-  }
+}
 
-  @media screen and (max-width: 960px) {
-    .fixed-bottom{
-      position: relative;
+.table-dark {
+    background-color: #212529 !important;
+    background-color: striped #2c3034;
+    background-color: striped #fff;
+    background-color: active #373b3e;
+    background-color: active #fff;
+    background-color: hover #323539;
+    background-color: hover #fff;
+    color: #fff;
+    border-color: #373b3e;
+}
+
+@media screen and (max-width: 960px) {
+    .fixed-bottom {
+        position: relative;
     }
-  }
+}
