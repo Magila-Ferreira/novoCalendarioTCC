@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Evento</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/23708beaa0.js" crossorigin="anonymous"></script>
+
+    <!-- Imagem X-Icon -->
+    <link rel="icon" href="img/mc.jpg" type="image/x-icon">
+
+    <!-- Meu CSS HOME -->
+    <link rel="stylesheet" href="../css/stylehome.css">
+
+    <!-- Meu CSS Mágila -->
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <!-- Links calendário -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Calendar 2 -->
+    <div class="container">
+        <br>
+        <a href="/adc/:id/:ano"><button class="btn-button">1º semestre</button></a>
+        <a href="/teste"><button class="btn-button-ir">EVENTOS</button></a>
+        <hr>
+
+        <!-- Form -->
+        <div class="card border mb-3 shadow-lg p-3 mb-5 bg-white rounded">
+
+            <!-- Form Header -->
+            <div class="card-header text-center">
+                <h7>Calendário 2º semestre</h7>
+            </div>
+            <br>
+
+            <!-- Linha -->
+            <div class="container row">
+
+                <!-- Col 1 - Calendário do semestre -->
+                <div class="container text-center col-lg-6 col-md-12 col-sm-12">
+                    <table class="table table-bordered card-header-calendar">
+                        <thead>
+                            <tr class="diaSemana text-danger">
+                                <th scope="col" width="17%">Segunda</th>
+                                <th scope="col" width="17%">Terça</th>
+                                <th scope="col" width="17%">Quarta</th>
+                                <th scope="col" width="17%">Quinta</th>
+                                <th scope="col" width="17%">Sexta</th>
+                                <th scope="col" width="15%">Sábado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>01</td>
+                                <td>02</td>
+                                <td>03</td>
+                                <td>04</td>
+                                <td>05</td>
+                            </tr>
+                            <tr>
+                                <td>07</td>
+                                <td>08</td>
+                                <td>09</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- FIM do calendário do semestre -->
+
+                <!-- Col 2 - Container EVENTO -->
+                <div class="container btn-evento col-lg-6 col-md-12 col-sm-12">
+                    <form action="/cadastrandoevento" method="POST">
+
+                        <!-- Navbar -->
+                        <navbar class="shadow-lg rounded">
+                            <div class="btn-evento-editar text-center">
+                                <h7>Adicionar evento</h7>
+                            </div>
+                        </navbar>
+
+                        <!-- DATA -->
+                        <div class="card-body text-white m-3">
+                            <input class="text-center" type="date" id="data" name="data" required="required" aria-describedby="dataHelpBlock">
+
+                            <!-- DESCRIÇÃO -->
+                            <textarea class="form-control mt-1" id="descricao" data-ls-module="charCounter" maxlength="100" name="descricao" type="textarea" rows="5" cols="50" placeholder="Insira a descrição da atividade"></textarea>
+                            <br>
+
+                            <!-- BUTTONS -->
+                            <div class="row">
+                                <div class="col-12">
+
+                                    <!-- BUTTON SUBMIT -->
+                                    <button class="btn-button-claro" type="submit">
+                    <img src="../img/save.png" alt="salvar"><img>
+                  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Fim do container EVENTO -->
+            </div>
+            <!-- FIM da linha -->
+        </div>
+        <!-- FIM do form -->
+    </div>
+    <!-- FIM do calendário -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
