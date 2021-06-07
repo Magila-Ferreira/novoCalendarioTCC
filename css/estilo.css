@@ -5,95 +5,87 @@ div.container-fixed {
 }
 
 .btn-button {
-    background: linear-gradient(to bottom, #000050, #307090);
-    color: white;
+    background: #000050;
+    border: solid 2px #f8f9fa;
+    border-radius: 5px;
+    color: #f8f9fa;
 }
 
 .btn-button:hover {
-    background: linear-gradient(to top, #000050, #307090);
-    color: white;
+    background: linear-gradient(to top, #000050, #0dcaf0);
+    color: #fff;
 }
 
-.btn-button-ir {
-    background: linear-gradient(to bottom, rgb(50, 50, 150), rgb(85, 150, 200));
-    color: white;
+/* Container */
+.container-personalizado {
+    background-color: #000;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    max-width: 700px;
 }
-
-.btn-button-ir:hover {
-    background: linear-gradient(to bottom, rgb(50, 50, 150), rgb(120, 255, 255));
-    color: black;
-}
-
-.btn-button-claro {
-    background: linear-gradient(to bottom, rgb(50, 50, 150), rgb(120, 255, 255));
-    color: black;
-    border-radius: 10px;
-}
-
-.btn-button-claro:hover {
-    background: linear-gradient(to bottom, rgb(50, 50, 150), rgb(85, 150, 200));
-    color: white;
-    border-radius: 10px;
-}
-
-
-/* Título Estrutura Calendário e Logins*/
 
 .diaSemana {
     padding: 10px;
     font-family: Cochin;
     font-style: italic;
     font-size: 15px;
-    color: white;
-    background-color: rgb(0, 0, 50);
+    color: #0dcaf0;
 }
 
-td.alert-danger {
-    color: white;
-    background: rgb(50, 0, 0);
+.mesReferencia {
+    color: #000;
+    text-align: center;
 }
 
+.submit-evento {
+    color: #00ff00;
+}
+
+.submit-evento:hover, .clean-evento:hover {
+    color: #fff;
+}
+
+.clean-evento {
+    color: #ff0000;
+}
 
 /********************************** CSS ADMIN.handlebars **********************************/
-/* Container Título */
+.button-navbar {
+    max-height: 25px;
+}
 
+
+/* Container Título */
 .nomeApp {
     margin-top: 5px;
     padding: 30px;
     font-family: Cochin;
     font-style: italic;
     color: white;
-    background-color: rgb(0, 0, 0);
     max-width: 700px;
 }
-
 
 /* Container Imagem */
-.color {
-    background-color: #212529;
-}
-
 .imgLogin {
-    padding: 30px;
-    color: white;
-    max-width: 700px;
+
+  
 }
 
 .borderLogin {
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
-    max-width: 150px;
-    max-height: 300px;
     border-radius: 100px;
+    align-items: center;
+    margin: 50px auto 20px auto;
 }
 
 .imgUser {
     max-width: auto;
-    max-height: 100px;
+    max-height: 70px;
     align-items: center;
 }
-
 
 /* Container Formulário */
 
@@ -114,109 +106,50 @@ div.form-group {
     margin-top: 20px;
 }
 
-/* Logins */
-
-.trash {
-    max-height: 10px;
-    max-width: auto;
-    margin-right: 120px;
-}
-
-.trash-login {
-    max-height: 25px;
-    max-width: auto;
-}
-
-.trash-login:hover {
-    max-height: 25px;
-    max-width: auto;
-    background: rgb(00, 00, 50);
-}
-
-.btn-button-trash {
-    background: rgb(00, 00, 50);
-    color: white;
-}
-
-.btn-button-trash:hover {
-    background: rgb(00, 00, 100);
-    color: white;
-}
-
-.card-header-logins {
-    color: white;
-    background: linear-gradient(to bottom, #000030, #20668a);
-    font-size: 5px;
-    font-family: 'Geneva';
-    margin-top: 5px;
-}
-
-
 /**************************************** CSS EVENTOS ****************************************/
-
-@media screen and (max-width: 600px) {
-    div.ml {
-        margin-left: auto;
-        margin-right: auto;
-    }
+.margin-top {
+    margin-top: 30px;
 }
 
-@media screen and (max-width: 500px) and (min-width: 500px) {
-    div.mc {
-        margin-left: -7.5px;
-        margin-right: auto;
-    }
+.width-button {
+    min-width: 5rem;
 }
 
+.card-header-calendar {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Geneva';
+    width: 50%;
+    margin: 50px auto;
+}
 
+.form-evento {
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    max-width: 300px;
+    max-height: 400px;
+}
+
+.labelData, .labelDescricao {
+    display: block;
+}
+
+.labelDescricao {
+    margin-top: 10px;
+}
+
+#descricao {
+    max-height: 70px;
+}
+/**************************************** CSS CALENDÁRIO ****************************************/
 /* Form Header */
-
 .card-header {
-    color: white;
+    color: #fff;
     background-image: linear-gradient(to top, #000030, #307090);
     font-size: 30px;
     font-family: 'Geneva';
     margin-top: auto;
     margin-bottom: auto;
 }
-
-.card-header-estrutura,
-.card-header-calendar {
-    color: white;
-    background: linear-gradient(to bottom, #000030, #20668a);
-    font-size: 12px;
-    font-family: 'Geneva';
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.img {
-    margin-top: auto;
-    margin-bottom: auto;
-    max-height: 30px;
-    max-width: 30px;
-}
-
-.btn-evento {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    max-width: 300px;
-    max-height: 400px;
-    background: linear-gradient(to bottom, rgb(50, 50, 150), rgb(120, 255, 255));
-    border-radius: 20px;
-}
-
-.btn-evento-editar {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 30px;
-    font-family: 'Geneva';
-    color: white;
-    max-width: 300px;
-    max-height: 300px;
-    background: linear-gradient(to bottom, rgb(50, 50, 150), rgb(120, 255, 255));
-    border-radius: 10px;
-}
-
-

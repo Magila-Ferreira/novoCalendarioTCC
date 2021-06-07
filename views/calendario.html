@@ -28,8 +28,7 @@
 <body>
     <div class="container">
         <br>
-        <a href="/adm"><button class="btn-button">VOLTAR</button></a>
-        <a href="/cadastrar"><button class="btn-button-ir">CADASTRAR</button></a>
+        <a href="/"><button class="btn-button"><img class="button-navbar" src="../img/home.png" alt="imagem do usuário"></button></a>
         <hr>
 
         <!-- Principal -->
@@ -37,46 +36,78 @@
 
             <!-- Header -->
             <div class="card-header text-center">
-                <h7>Lista de calendários cadastrados - ETEC</h7>
+                <h7>Calendário - ETEC</h7>
             </div>
 
             <!-- Colunas -->
             <div class="row">
 
                 <!-- Col_1 -->
-                <div class="card-body text-dark col-lg-4 col-md-4 col-sm-12">
-                    <img class="col-5 img-calendar" id="calendar" src="../img/iconCalendar.png" alt="camera">
+                <div class="card-body col-12">
+                    <img class="col-10" id="calendar" src="../img/iconCalendar.png" alt="camera">
                 </div>
 
                 <!-- Col_2 -->
-                <div class="container col-lg-6 col-md-8 col-sm-12 ml text-center">
-                    <div class="card-body text-dark">
-                        <div class="row">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">ANO</th>
-                                        <th scope="col">SEMESTRE</th>
-                                        <th scope="col">ADICIONAR</th>
-                                        <th scope="col">EXCLUIR</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td><a href="/teste"><button class="btn-button">+ EVENTOS</button></a></td>
-                                        <td><a href=""><button class="btn-button-ir">DELETAR</button></a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fim do Container formulário -->
+                <!-- Col 1 - Calendário do semestre -->
+                <div class="container text-center col-12">
+                    <table class="table table-bordered card-header-calendar">
+                        <thead>
+                            <tr class="diaSemana">
+                                <th scope="col" width="17%">Segunda</th>
+                                <th scope="col" width="17%">Terça</th>
+                                <th scope="col" width="17%">Quarta</th>
+                                <th scope="col" width="17%">Quinta</th>
+                                <th scope="col" width="17%">Sexta</th>
+                                <th scope="col" width="15%">Sábado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>01</td>
+                                <td>02</td>
+                                <td>03</td>
+                                <td>04</td>
+                                <td>05</td>
+                            </tr>
+                            <tr>
+                                <td>07</td>
+                                <td>08</td>
+                                <td>09</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- FIM do calendário do semestre -->
             </div>
             <a href="/logins">
-                <i class="fas fa-user-lock"></i>
+                <i class="fas fa-user-lock user-lock"></i>
             </a>
         </div>
     </div>

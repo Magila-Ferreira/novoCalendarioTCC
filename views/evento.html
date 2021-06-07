@@ -9,8 +9,11 @@
     <title>Evento</title>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/23708beaa0.js" crossorigin="anonymous"></script>
@@ -23,39 +26,39 @@
 
     <!-- Meu CSS Mágila -->
     <link rel="stylesheet" href="../css/estilo.css">
-
-    <!-- Links calendário -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Calendar 2 -->
-    <div class="container">
-        <br>
-        <a href="/adc/:id/:ano"><button class="btn-button">1º semestre</button></a>
-        <a href="/teste"><button class="btn-button-ir">EVENTOS</button></a>
+    <div class="container margin-top">
+
+        <a href="/adc/:id/:ano"><button class="btn-button width-button"><i class="fas fa-user-lock"></i></button></a>            
+
+        <a href="/teste"><button class="btn-button width-button"><i class="far fa-calendar-alt"></i></button></a>
         <hr>
 
         <!-- Form -->
-        <div class="card border mb-3 shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="card border mb-3 shadow-lg p-3 mb-5 container-personalizado text-center">
 
             <!-- Form Header -->
-            <div class="card-header text-center">
-                <h7>Calendário 2º semestre</h7>
+            <div class="text-center text-white">
+                <h5>Inserir EVENTO no Calendário</h5>
             </div>
             <br>
 
             <!-- Linha -->
             <div class="container row">
 
+                <form class="mesReferencia">
+                    <label for="bday-month"></label>
+                    <input id="bday-month" type="month" name="bday-month" value="2021-06">
+                </form>
+
                 <!-- Col 1 - Calendário do semestre -->
-                <div class="container text-center col-lg-6 col-md-12 col-sm-12">
+                <div class="container text-center col-12">
                     <table class="table table-bordered card-header-calendar">
                         <thead>
-                            <tr class="diaSemana text-danger">
+                            <tr class="diaSemana">
                                 <th scope="col" width="17%">Segunda</th>
                                 <th scope="col" width="17%">Terça</th>
                                 <th scope="col" width="17%">Quarta</th>
@@ -107,57 +110,65 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
-                <!-- FIM do calendário do semestre -->
+                </div><!-- FIM do calendário do semestre -->
 
                 <!-- Col 2 - Container EVENTO -->
-                <div class="container btn-evento col-lg-6 col-md-12 col-sm-12">
-                    <form action="/cadastrandoevento" method="POST">
+                <div class="container col-12">
 
-                        <!-- Navbar -->
-                        <navbar class="shadow-lg rounded">
-                            <div class="btn-evento-editar text-center">
-                                <h7>Adicionar evento</h7>
-                            </div>
-                        </navbar>
+                    <!-- Form Evento -->
+                    <form class="form-evento" action="/cadastrandoevento" method="POST">
 
                         <!-- DATA -->
-                        <div class="card-body text-white m-3">
-                            <input class="text-center" type="date" id="data" name="data" required="required" aria-describedby="dataHelpBlock">
+                        <label class="labelData">Insira a data:</label>
 
-                            <!-- DESCRIÇÃO -->
-                            <textarea class="form-control mt-1" id="descricao" data-ls-module="charCounter" maxlength="100" name="descricao" type="textarea" rows="5" cols="50" placeholder="Insira a descrição da atividade"></textarea>
-                            <br>
+                        <input class="text-center" type="date" id="data" name="data" required="required"
+                            aria-describedby="dataHelpBlock">
 
-                            <!-- BUTTONS -->
-                            <div class="row">
-                                <div class="col-12">
+                        <!-- DESCRIÇÃO -->
+                        <label class="labelDescricao">Adicione uma breve descrição:</label>
 
-                                    <!-- BUTTON SUBMIT -->
-                                    <button class="btn-button-claro" type="submit">
-                    <img src="../img/save.png" alt="salvar"><img>
-                  </button>
-                                </div>
+                        <textarea class="form-control mt-1" id="descricao" data-ls-module="charCounter" maxlength="100"
+                            name="descricao" type="textarea" rows="5" cols="30"
+                            placeholder="Insira a descrição da atividade"></textarea>
+                        <br>
+
+                        <!-- BUTTONS -->
+                        <div class="row">
+                            <div class="col-12">
+
+                                <!-- BUTTON SUBMIT -->
+                                <button class="btn-button width-button submit-evento" type="submit">
+                                    <i class="fas fa-calendar-check"></i>
+                                </button>
+
+                                <!-- BUTTON LIMPAR -->
+                                <button class="btn-button width-button clean-evento" type="clean">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
                             </div>
                         </div>
-                    </form>
                 </div>
-                <!-- Fim do container EVENTO -->
+                </form>
             </div>
-            <!-- FIM da linha -->
+            <!-- Fim do container EVENTO -->
         </div>
-        <!-- FIM do form -->
+        <!-- FIM da linha -->
+    </div>
+    <!-- FIM do form -->
     </div>
     <!-- FIM do calendário -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
