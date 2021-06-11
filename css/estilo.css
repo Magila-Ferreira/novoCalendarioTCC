@@ -27,11 +27,16 @@ div.container-fixed {
 }
 
 .diaSemana {
-    padding: 10px;
-    font-family: Cochin;
+    border: solid 5px #343a40;
     font-style: italic;
-    font-size: 15px;
-    color: #0dcaf0;
+}
+
+.diaSemana, .header-calendar {
+    font-family: Cochin;
+    font-size: 20px;
+    color: #c0c0c0;
+    background: #212529;
+    text-align: center;
 }
 
 .mesReferencia {
@@ -65,12 +70,6 @@ div.container-fixed {
     font-style: italic;
     color: white;
     max-width: 700px;
-}
-
-/* Container Imagem */
-.imgLogin {
-
-  
 }
 
 .borderLogin {
@@ -115,11 +114,11 @@ div.form-group {
     min-width: 5rem;
 }
 
-.card-header-calendar {
+.card-header-evento {
     color: #fff;
     font-size: 14px;
     font-family: 'Geneva';
-    width: 50%;
+    width: 80%;
     margin: 50px auto;
 }
 
@@ -145,11 +144,94 @@ div.form-group {
 }
 /**************************************** CSS CALENDÁRIO ****************************************/
 /* Form Header */
-.card-header {
+.card-header-personalizado {
     color: #fff;
     background-image: linear-gradient(to top, #000030, #307090);
     font-size: 30px;
     font-family: 'Geneva';
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.header-calendar {
+    margin-top: 30px;
+}
+
+.card-header-calendar, .header-calendar {
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Geneva';
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-calendar {
+    padding: 0.5rem;
+}
+
+.mes {
+    color: #fff;
+    text-decoration-line: none;
+    padding: 0 3rem;
+    font-size: 24px;
+    align-items: center;
+}
+
+.mes:hover {
+    color: #0dcaf0;
+    text-decoration-line: underline;
+}
+
+.mes:active {
+    background: #343a40;
+}
+
+.card-layout {
+    margin: 5px 2px !important;
+    text-align: center;
+}
+
+.text-white {
+    color:#fff !important;
+}
+
+.text-danger {
+    color: #904040 !important;
+}
+
+.bg-primary {
+    background: #000030 !important;
+}
+
+.bg-secondary {
+    background: #343a40 !important;;
+}
+
+.bg-danger {
+    background: #300000 !important;;
+}
+
+.bg-black {
+    background: #000;
+}
+
+.card-header {
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.card-title {
+    font-size: 12px;
+    font-variant: small-caps;
+}
+
+.card-text {
+    font-size: 10px;
+}
+
+.login-admin {
+    margin: 10px 0 5px 10px;
 }
