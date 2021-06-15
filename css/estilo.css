@@ -172,6 +172,10 @@ div.form-group {
     padding: 0.5rem;
 }
 
+.icon-navegacao-mes {
+    margin: 10px auto;
+}
+
 .mes {
     color: #fff;
     text-decoration-line: none;
@@ -183,10 +187,13 @@ div.form-group {
 .mes:hover {
     color: #0dcaf0;
     text-decoration-line: underline;
+    
 }
 
-.mes:active {
+.mes.ativo {
+    color: #0dcaf0;
     background: #343a40;
+    border-bottom: 2px solid #0dcaf0;
 }
 
 .card-layout {
@@ -203,7 +210,7 @@ div.form-group {
 }
 
 .bg-primary {
-    background: #000030 !important;
+    background: #304070 !important;
 }
 
 .bg-secondary {
@@ -211,7 +218,7 @@ div.form-group {
 }
 
 .bg-danger {
-    background: #300000 !important;;
+    background: #703040 !important;;
 }
 
 .bg-black {
@@ -229,7 +236,7 @@ div.form-group {
 }
 
 .card-text {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .login-admin {
