@@ -21,11 +21,8 @@
     <!-- Imagem X-Icon -->
     <link rel="icon" href="img/mc.jpg" type="image/x-icon">
 
-    <!-- Meu CSS HOME -->
-    <link rel="stylesheet" href="../css/stylehome.css">
-
-    <!-- Meu CSS BOOTSTRAP MIN -->
-    <link rel="stylesheet" href="../bootstrap-5.0.1-dist/css/bootstrap.min.css">
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
 <body>
@@ -33,7 +30,7 @@
         <div class="row justify-content-md-center">
             <div class="col-md-auto">
                 <div class="titulo-cab">
-                    <i class="fas fa-calendar-check home"></i>
+                    <i class="fas fa-calendar-check btn-icon"></i>
                     <strong> BEM VINDO AO CALENDÁRIO ETEC - JOÃO BELARMINO </strong>
                 </div>
             </div>
@@ -44,14 +41,14 @@
         <!--INICIO CONTAINER -->
 
 
-        <div class="row mt-5 row-main">
+        <div class="row mt-5">
             <!--ROW-->
 
             <!--TIPS 01-->
             <div class="col-xl-4 mb-5 mx-auto">
                 <div class="card-tip text-body">
                     <div class="card h-100 shadow bg-dark text-white">
-                        <div class="card-body black-border">
+                        <div class="card-body bg-black__radius">
                             <i class="fas  fa-exclamation"></i>
                             <p> Selecione um curso e acesse seu calendário específico.</p>
                         </div>
@@ -63,38 +60,26 @@
             <div class="col-xl-4 mb-5 mx-auto">
                 <div class="card-tip text-body">
                     <div class="card card h-100 shadow bg-dark text-white">
-                        <div class="card-body black-border">
+                        <div class="card-body bg-black__radius">
                             <i class="fas fa-exclamation"></i>
                             <p> Você também pode acessar o calendário geral da ETEC. </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- FIM Row-->
+        </div><!-- FIM Row-->
         <br><br>
 
-        <table class="tabela-cursos table-hover mx-auto table-sm table-dark">
+        <!--Calendário Geral -->
+        <div class="calendario-geral">
+            <h3 class="text-center">ETEC</h3>
+            <h5 class="text-center"> <a href="./calendario.html" class="link-cursos"> Calendário Geral </a> </h5>
+        </div>
 
-            <!--Tabela de cursos -->
-            <thead>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col">ETEC</th>
-            </thead>
-
-            <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td> <a href="/calendar" class="link-cursos"> Calendário Geral </a> </td>
-            </tr>
-
+        <!-- Tabela Cursos -->
+        <table class="table-hover mx-auto table-sm">
             <thead>
                 <tr>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
                     <th scope="col"></th>
                     <th scope="col">CURSOS</th>
                 </tr>
@@ -102,86 +87,62 @@
 
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td></td>
-                    <td></td>
-                    <td> <a href="/testelucas" class="link-cursos"> Administração </a> </td>
+                    <th class="table-hover__cursos" scope="row">1</th>
+                    <td> <a href="./calendario.html" class="link-cursos"> Administração </a> </td>
                 </tr>
                 <tr>
-                    <th scope="row">2</th>
-                    <td></td>
-                    <td></td>
-                    <td> <a href="calendarios/02.ejs" class="link-cursos"> Contabilidade </a> </td>
+                    <th class="table-hover__cursos" scope="row">2</th>
+                    <td> <a href="./calendario.html" class="link-cursos"> Contabilidade </a> </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">3</th>
-                    <td></td>
-                    <td></td>
-                    <td> <a href="calendarios/03.ejs" class="link-cursos"> Design de interiores </a> </td>
+                    <th class="table-hover__cursos" scope="row">3</th>
+                    <td> <a href="./calendario.html" class="link-cursos"> Design de interiores </a> </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">4</th>
-                    <td></td>
-                    <td></td>
-                    <td> <a href="calendarios/04.ejs" class="link-cursos"> Desenho da construção civil </a> </td>
+                    <th class="table-hover__cursos" scope="row">4</th>
+                    <td> <a href="./calendario.html" class="link-cursos"> Desenho da construção civil </a> </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">5</th>
-                    <td></td>
-                    <td></td>
-                    <td> <a href="calendarios/05.ejs" class="link-cursos"> Desenvolvimento de sistemas </a> </td>
+                    <th class="table-hover__cursos" scope="row">5</th>
+                    <td> <a href="./calendario.html" class="link-cursos"> Desenvolvimento de sistemas </a> </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">6</th>
-                    <td></td>
-                    <td></td>
-                    <td> <a href="calendarios/06.ejs" class="link-cursos"> Eletrotécnica </a> </td>
+                    <th class="table-hover__cursos" scope="row">6</th>
+                    <td> <a href="./calendario.html" class="link-cursos"> Eletrotécnica </a> </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">7</th>
-                    <td></td>
-                    <td></td>
-                    <td> <a href="calendarios/07.ejs" class="link-cursos"> Enfermagem </a> </td>
+                    <th class="table-hover__cursos" scope="row">7</th>
+                    <td> <a href="./calendario.html" class="link-cursos"> Enfermagem </a> </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">8</th>
-                    <td></td>
-                    <td></td>
-                    <td> <a href="calendarios/08.ejs" class="link-cursos"> Logística </a> </td>
+                    <th class="table-hover__cursos" scope="row">8</th>
+                    <td> <a href="./calendario.html" class="link-cursos"> Logística </a> </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">9</th>
-                    <td></td>
-                    <td></td>
-                    <td> <a href="calendarios/09.ejs" class="link-cursos"> Mecânica </a> </td>
+                    <th class="table-hover__cursos" scope="row">9</th>
+                    <td> <a href="./calendario.html" class="link-cursos"> Mecânica </a> </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">10</th>
-                    <td></td>
-                    <td></td>
-                    <td> <a href="calendarios/10.ejs" class="link-cursos"> Química </a> </td>
+                    <th class="table-hover__cursos" scope="row">10</th>
+                    <td> <a href="./calendario.html" class="link-cursos"> Química </a> </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">11</th>
-                    <td></td>
-                    <td></td>
-                    <td> <a href="calendarios/11.ejs" class="link-cursos"> Segurança do trabalho </a> </td>
+                    <th class="table-hover__cursos" scope="row">11</th>
+                    <td> <a href="./calendario.html" class="link-cursos"> Segurança do trabalho </a> </td>
                 </tr>
 
                 <tr>
-                    <th scope="row">12</th>
-                    <td></td>
-                    <td></td>
-                    <td> <a href="calendarios/12.ejs" class="link-cursos"> Turismo receptivo </a> </td>
+                    <th class="table-hover__cursos table-hover__table" scope="row">12</th>
+                    <td class="table-hover__table"> <a href="./calendario.html" class="link-cursos"> Turismo receptivo </a> </td>
                 </tr>
             </tbody>
         </table>
@@ -191,11 +152,11 @@
     <br><br><br><br><br><br>
 
     <footer class="p-2 text-center">
-        <div class="descricao">
+        <div class="text-white">
             <p> ETEC João Belarmino - Desenvolvimento de Sistemas
                 <br>
-                <a href="/adm">
-                    <i class="fas fa-user-lock user-lock"></i>
+                <a href="./adm.html">
+                    <i class="fas fa-user-lock btn-icon"></i>
                 </a>
             </p>
         </div>

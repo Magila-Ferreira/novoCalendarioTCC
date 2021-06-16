@@ -1,4 +1,147 @@
 /* GLOBAL */
+body {
+    background-color: rgba(0, 147, 233, 0.7) #0093E9;
+    background-image: linear-gradient(281deg, rgba(0, 147, 233, 0.7) 0%, rgba(128, 208, 199, 0.7) 100%);
+}
+
+header {
+    background-image: url('../img/cover02.jpg');
+    background-color: rgba(0, 147, 233, 0.7) #0093E9;
+    background-image: linear-gradient(281deg, rgba(0, 147, 233, 0.7) 0%, rgba(128, 208, 199, 0.7) 100%), url('../img/cover02.jpg');
+    padding: 60px 60px 100px 60px;
+    background-size: cover;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    background-image: url('../img/cover002.jpg');
+    background-color: rgba(0, 147, 233, 0.7) #0093E9;
+    background-image: linear-gradient(281deg, rgba(0, 147, 233, 0.7) 0%, rgba(128, 208, 199, 0.7) 100%), url('../img/cover002.jpg');
+    padding: 60px 60px 100px 60px;
+    background-size: cover;
+}
+
+.btn-icon {
+    color: #000050;
+}
+
+.btn-icon:hover {
+    color: #0dcaf0;
+}
+
+.bg-dark {
+    border-radius: 100px;
+    background-color: #000;
+}
+
+.bg-primary {
+    background: #304070 !important;
+}
+
+.bg-secondary {
+    background: #343a40 !important;;
+}
+
+.bg-danger {
+    background: #703040 !important;;
+}
+
+.text-white {
+    color:#fff !important;
+}
+
+.text-danger {
+    color: #904040 !important;
+}
+
+.card-body {
+    text-align: center;
+    align-content: center;
+}
+
+
+
+
+
+
+
+
+/* HOME */
+.card-tip i {
+    font-size: 40px;
+    color: #0dcaf0;
+}
+
+.bg-black__radius {
+    background: #000;
+    border-radius: 100px;
+}
+
+.table-hover, .calendario-geral {
+    background: #000 !important;
+    color:#fff !important;
+    margin: auto;
+    font-size: 20px;
+    width: 50%;
+    height: 50%;
+}
+
+.calendario-geral {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.link-cursos {
+    color: #0dcaf0;
+}
+
+.table-hover__table {
+    padding-bottom: 30px !important;
+}
+
+.table-hover__cursos {
+    padding-left: 30px !important;
+}
+
+
+
+
+
+
+/* ADMIN */
+
+/* EVENTO */
+
+/* CALENDÁRIO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 div.container-fixed {
     margin-right: 500px;
     margin-left: 500px;
@@ -26,9 +169,16 @@ div.container-fixed {
     max-width: 700px;
 }
 
-.diaSemana {
+.diaSemana, .evento__diaSemana {
     border: solid 5px #343a40;
     font-style: italic;
+    color: #0dcaf0;
+}
+
+.evento__diaSemana {
+    background: #212529;
+    border: solid 1px #c0c0c0;
+
 }
 
 .diaSemana, .header-calendar {
@@ -201,29 +351,9 @@ div.form-group {
     text-align: center;
 }
 
-.text-white {
-    color:#fff !important;
-}
 
-.text-danger {
-    color: #904040 !important;
-}
 
-.bg-primary {
-    background: #304070 !important;
-}
 
-.bg-secondary {
-    background: #343a40 !important;;
-}
-
-.bg-danger {
-    background: #703040 !important;;
-}
-
-.bg-black {
-    background: #000;
-}
 
 .card-header {
     font-weight: bolder;
@@ -241,4 +371,67 @@ div.form-group {
 
 .login-admin {
     margin: 10px 0 5px 10px;
+}
+
+
+
+header i {
+    font-size: 90px;
+    margin-right: 20px;
+}
+
+
+
+footer i {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+.tabela-etec {
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px) {
+    .fixed-bottom {
+        position: relative;
+    }
+}
+
+.cores {
+    --bs-cyan: #0dcaf0;
+    --bs-blue: #0d6efd;
+    --bs-blue-dark: #000050;
+
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+
+    --bs-white: #fff;
+    --bs-light: #f8f9fa;
+    
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+
+    --bs-dark: #212529;
+    --darkered: #000;
 }
