@@ -1,17 +1,10 @@
 /* GLOBAL */
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
     background-color: rgba(0, 147, 233, 0.7) #0093E9;
     background-image: linear-gradient(281deg, rgba(0, 147, 233, 0.7) 0%, rgba(128, 208, 199, 0.7) 100%);
-}
-
-header {
-    background-image: url('../img/cover02.jpg');
-    background-color: rgba(0, 147, 233, 0.7) #0093E9;
-    background-image: linear-gradient(281deg, rgba(0, 147, 233, 0.7) 0%, rgba(128, 208, 199, 0.7) 100%), url('../img/cover02.jpg');
-    padding: 60px 60px 100px 60px;
-    background-size: cover;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footer {
@@ -20,6 +13,51 @@ footer {
     background-image: linear-gradient(281deg, rgba(0, 147, 233, 0.7) 0%, rgba(128, 208, 199, 0.7) 100%), url('../img/cover002.jpg');
     padding: 60px 60px 100px 60px;
     background-size: cover;
+}
+
+.card-body {
+    text-align: center;
+    align-content: center;
+}
+
+.container-personalizado {
+    background-color: #000;
+    color: #fff;
+    border-radius: 100px;
+    margin: 5px auto;
+    align-items: center;
+    max-width: 700px;
+    padding: 30px;
+    font-family: Cochin;
+    font-size: 20px;
+}
+
+.titulo__main {
+    font-style: italic;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+/* GLOBAL COLORS */
+.btn-button {
+    background: #000050;
+    border: solid 2px #f8f9fa;
+    border-radius: 5px;
+    color: #f8f9fa;
+}
+
+.btn-button:hover {
+    background: linear-gradient(to top, #000050, #0dcaf0);
+    color: #fff;
+}
+
+.btn-button__img {
+    max-height: 25px;
 }
 
 .btn-icon {
@@ -55,10 +93,6 @@ footer {
     color: #904040 !important;
 }
 
-.card-body {
-    text-align: center;
-    align-content: center;
-}
 
 
 
@@ -68,17 +102,35 @@ footer {
 
 
 /* HOME */
-.card-tip i {
-    font-size: 40px;
-    color: #0dcaf0;
+.home {
+    min-width: 100%;
+    background-image: url('../img/cover02.jpg');
+    background-color: rgba(0, 147, 233, 0.7) #0093E9;
+    background-image: linear-gradient(281deg, rgba(0, 147, 233, 0.7) 0%, rgba(128, 208, 199, 0.7) 100%), url('../img/cover02.jpg');
+    padding: 60px 60px 100px 60px;
+    background-size: cover;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.bg-black__radius {
+.home__card-tip i {
+    font-size: 40px;
+    color: #0dcaf0;
+    margin-bottom: 10px;
+}
+
+.home__bg-black___radius {
+    padding-top: 30px;
     background: #000;
     border-radius: 100px;
 }
 
-.table-hover, .calendario-geral {
+.home__calendario-geral {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.home__calendario-geral, .home__table-hover {
     background: #000 !important;
     color:#fff !important;
     margin: auto;
@@ -87,88 +139,76 @@ footer {
     height: 50%;
 }
 
-.calendario-geral {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.link-cursos {
-    color: #0dcaf0;
-}
-
-.table-hover__table {
-    padding-bottom: 30px !important;
-}
-
-.table-hover__cursos {
+.home__table-hover___cursos {
     padding-left: 30px !important;
 }
 
+.home__link-cursos {
+    color: #0dcaf0;
+}
 
-
-
+.home__table-hover___pb {
+    padding-bottom: 30px !important;
+}/***** Fim HOME *****/
 
 
 /* ADMIN */
-
-/* EVENTO */
-
-/* CALENDÁRIO */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-div.container-fixed {
-    margin-right: 500px;
-    margin-left: 500px;
-}
-
-.btn-button {
-    background: #000050;
-    border: solid 2px #f8f9fa;
-    border-radius: 5px;
-    color: #f8f9fa;
-}
-
-.btn-button:hover {
-    background: linear-gradient(to top, #000050, #0dcaf0);
-    color: #fff;
-}
-
-/* Container */
-.container-personalizado {
-    background-color: #000;
+.admin__img-locked {
     border-radius: 100px;
-    margin-left: auto;
-    margin-right: auto;
     align-items: center;
+    margin: 50px auto 20px auto;
+}
+
+.admin__img-locked___tamanho {
+    max-width: auto;
+    max-height: 70px;
+}
+
+.admin__form {
+    padding: 20px 10px;
     max-width: 700px;
 }
 
+.admin__form-group {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.admin__button {
+    min-width: 5rem;
+    margin-top: 20px;
+}/***** Fim ADMIN *****/
+
+
+/* EVENTO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CALENDÁRIO */
 .diaSemana, .evento__diaSemana {
     border: solid 5px #343a40;
     font-style: italic;
@@ -206,58 +246,20 @@ div.container-fixed {
     color: #ff0000;
 }
 
-/********************************** CSS ADMIN.handlebars **********************************/
-.button-navbar {
-    max-height: 25px;
-}
-
-
-/* Container Título */
-.nomeApp {
-    margin-top: 5px;
-    padding: 30px;
-    font-family: Cochin;
-    font-style: italic;
-    color: white;
-    max-width: 700px;
-}
-
-.borderLogin {
+.form-evento {
+    color: #fff;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 100px;
-    align-items: center;
-    margin: 50px auto 20px auto;
+    padding: 5px;
+    max-width: 300px;
+    max-height: 400px;
 }
 
-.imgUser {
-    max-width: auto;
-    max-height: 70px;
-    align-items: center;
-}
 
-/* Container Formulário */
-
-.form {
-    padding: 20px 10px;
-    max-width: 700px;
-}
-
-div.form-group {
-    max-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-}
-
-.button-admin {
-    min-width: 5rem;
-    margin-top: 20px;
-}
 
 /**************************************** CSS EVENTOS ****************************************/
-.margin-top {
-    margin-top: 30px;
+.margin-personalizada {
+    margin: 30px auto;
 }
 
 .width-button {
@@ -272,14 +274,6 @@ div.form-group {
     margin: 50px auto;
 }
 
-.form-evento {
-    color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    max-width: 300px;
-    max-height: 400px;
-}
 
 .labelData, .labelDescricao {
     display: block;

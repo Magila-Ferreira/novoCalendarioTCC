@@ -87,7 +87,7 @@ app.get('/adcevento', (req, res) => {
 // **************************************** BACK-END CREATE TABLE ******************************************
 
 // ---------- CREATE LOGINS ----------
-app.post('/cadastrandologin', (req, res) => {
+app.post('/validacaoLogin', (req, res) => {
   Login.create({
     RM: req.body.RM,
     senha: req.body.senha

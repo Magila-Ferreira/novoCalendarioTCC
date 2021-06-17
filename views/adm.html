@@ -26,41 +26,39 @@
 </head>
 
 <body>
-    <div class="container">
+    <header class="container">
         <br>
-        <a href="/"><button class="btn-button"><img class="button-navbar" src="../img/home.png"
-                    alt="imagem do usuário"></button></a>
+        <a href="./home.html"><button class="btn-button"><img class="btn-button__img" src="../img/home.png" alt="imagem do usuário"></button></a>
         <hr>
-    </div>
+    </header>
 
     <!-- Container Principal -->
-    <div class="container text-center">
+    <main class="container text-center">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-12">
 
                 <!-- Container Título -->
-                <div class="container nomeApp container-personalizado">
-                    <h5>Login Administrador</h5>
-
+                <div class="container container-personalizado">
+                    <h5 class="titulo__main">Login Administrador</h5>
 
                     <!-- Container Imagem -->
                     <div class="container">
-                        <div class="borderLogin">
-                            <img class="imgUser" src="../img/user.png" alt="imagem do usuário"><img>
+                        <div class="admin__img-locked">
+                            <img class="admin__img-locked___tamanho" src="../img/user.png" alt="imagem do usuário"><img>
                         </div>
                     </div>
 
                     <!-- Container Formulário -->
-                    <div class="container form">
-                        <form action="/cadastrandologin" method="POST">
-                            <div class="form-group" aling="text-center">
+                    <div class="container admin__form">
+                        <form action="/validacaoLogin" method="POST">
+                            <div class="admin__form-group" aling="text-center">
                                 <div class="col-sm-12">
                                     <input data-ls-module="charCounter" maxlength="6" name="RM" type="text"
                                         class="form-control numerico text-center" id="inputPassword" placeholder="RM"
                                         required="required">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="admin__form-group">
                                 <div class="col-sm-12">
                                     <input data-ls-module="charCounter" maxlength="4" name="senha" type="password"
                                         class="form-control numerico text-center" id="inputPassword3"
@@ -68,14 +66,14 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <button type="submit" class="btn-button button-admin">Logar</button>
+                                <button type="submit" class="btn-button admin__button">Logar</button>
                             </div>
                         </form>
                     </div> <!-- Fim do Formulário -->
                 </div><!-- Fim do Container formulário -->
             </div><!-- Fim da Coluna 'col' -->
         </div><!-- Fim da Linha 'row' -->
-    </div><!-- Fim do Container Principal -->
+    </main><!-- Fim do Container Principal -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
