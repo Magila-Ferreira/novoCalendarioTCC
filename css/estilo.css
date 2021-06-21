@@ -3,8 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    background-color: rgba(0, 147, 233, 0.7) #0093E9;
-    background-image: linear-gradient(281deg, rgba(0, 147, 233, 0.7) 0%, rgba(128, 208, 199, 0.7) 100%);
+    background-image: linear-gradient(30deg, rgba(0, 147, 233, 0.7) 10%, rgba(128, 208, 199, 0.7) 90%);
 }
 
 footer {
@@ -20,23 +19,30 @@ footer {
     align-content: center;
 }
 
+.width-button {
+    min-width: 34px;
+}
+
 .container-personalizado {
     background-color: #000;
     color: #fff;
     border-radius: 100px;
     margin: 5px auto;
+    text-align: center;
     align-items: center;
     max-width: 700px;
-    padding: 30px;
+    min-width: 570px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-family: Cochin;
     font-size: 20px;
 }
 
 .titulo__main {
-    font-style: italic;
     font-size: 25px;
+    color: #fff;
+    font-family: cursive;
 }
-
 
 
 
@@ -57,7 +63,7 @@ footer {
 }
 
 .btn-button__img {
-    max-height: 25px;
+    max-height: 18px;
 }
 
 .btn-icon {
@@ -113,6 +119,11 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header .btn-icon {
+    font-size: 90px;
+    margin-right: 20px;
+}
+
 .home__card-tip i {
     font-size: 40px;
     color: #0dcaf0;
@@ -149,10 +160,19 @@ footer {
 
 .home__table-hover___pb {
     padding-bottom: 30px !important;
+}
+
+footer i {
+    font-size: 40px;
+    margin-top: 10px;
 }/***** Fim HOME *****/
 
 
 /* ADMIN */
+em {
+    font-style: italic;
+}
+
 .admin__img-locked {
     border-radius: 100px;
     align-items: center;
@@ -183,8 +203,59 @@ footer {
 
 
 /* EVENTO */
+.evento {
+    margin: 30px auto;
+    min-width: 570px;
+    height: auto;
+}
 
+.evento__card-header {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Geneva';
+    width: 80%;
+    margin: 20px auto;
+}
 
+.evento__diaSemana {
+    background: #343a40;
+    border: solid 1px #c0c0c0;
+    font-style: italic;
+    color: #0dcaf0;
+}
+
+.evento__form {
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    max-width: 300px;
+    max-height: 400px;
+}
+
+.evento__labelData, .evento__labelDescricao {
+    display: block;
+}
+
+.evento__labelDescricao {
+    margin-top: 10px;
+}
+
+#evento__descricao {
+    max-height: 70px;
+}
+
+.evento__submit {
+    color: #00ff00;
+}
+
+.evento__submit:hover, .evento__clean:hover {
+    color: #fff;
+}
+
+.evento__clean {
+    color: #ff0000;
+}/***** Fim EVENTO *****/
 
 
 
@@ -209,19 +280,13 @@ footer {
 
 
 /* CALENDÁRIO */
-.diaSemana, .evento__diaSemana {
+.calendario__diaSemana {
     border: solid 5px #343a40;
     font-style: italic;
     color: #0dcaf0;
 }
 
-.evento__diaSemana {
-    background: #212529;
-    border: solid 1px #c0c0c0;
-
-}
-
-.diaSemana, .header-calendar {
+.calendario__diaSemana {
     font-family: Cochin;
     font-size: 20px;
     color: #c0c0c0;
@@ -229,65 +294,6 @@ footer {
     text-align: center;
 }
 
-.mesReferencia {
-    color: #000;
-    text-align: center;
-}
-
-.submit-evento {
-    color: #00ff00;
-}
-
-.submit-evento:hover, .clean-evento:hover {
-    color: #fff;
-}
-
-.clean-evento {
-    color: #ff0000;
-}
-
-.form-evento {
-    color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    max-width: 300px;
-    max-height: 400px;
-}
-
-
-
-/**************************************** CSS EVENTOS ****************************************/
-.margin-personalizada {
-    margin: 30px auto;
-}
-
-.width-button {
-    min-width: 5rem;
-}
-
-.card-header-evento {
-    color: #fff;
-    font-size: 14px;
-    font-family: 'Geneva';
-    width: 80%;
-    margin: 50px auto;
-}
-
-
-.labelData, .labelDescricao {
-    display: block;
-}
-
-.labelDescricao {
-    margin-top: 10px;
-}
-
-#descricao {
-    max-height: 70px;
-}
-/**************************************** CSS CALENDÁRIO ****************************************/
-/* Form Header */
 .card-header-personalizado {
     color: #fff;
     background-image: linear-gradient(to top, #000030, #307090);
@@ -297,11 +303,21 @@ footer {
     margin-bottom: auto;
 }
 
-.header-calendar {
+.calendario__header {
+    padding: 0.5rem;
     margin-top: 30px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    font-family: Cochin;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.card-header-calendar, .header-calendar {
+.card-header-calendar {
     background-color: #000;
     color: #fff;
     font-size: 14px;
@@ -310,10 +326,6 @@ footer {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-}
-
-.header-calendar {
-    padding: 0.5rem;
 }
 
 .icon-navegacao-mes {
@@ -345,10 +357,6 @@ footer {
     text-align: center;
 }
 
-
-
-
-
 .card-header {
     font-weight: bolder;
     font-size: 14px;
@@ -367,44 +375,9 @@ footer {
     margin: 10px 0 5px 10px;
 }
 
-
-
-header i {
-    font-size: 90px;
-    margin-right: 20px;
-}
-
-
-
-footer i {
-    font-size: 40px;
-    margin-top: 10px;
-}
-
-
-
-
-
-
-
-
-
 .tabela-etec {
     padding: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 960px) {
     .fixed-bottom {

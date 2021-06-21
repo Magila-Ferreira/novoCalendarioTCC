@@ -26,43 +26,53 @@
 </head>
 
 <body>
-    <!-- Calendar 2 -->
-    <div class="container margin-personalizada">
+    <!-- Calendário -->
+    <div class="container evento">
+        <header>
+            <a href="./home.html">
+                <button class="btn-button">
+                    <img class="btn-button__img" src="../img/home.png" alt="home">
+                </button>
+            </a>
 
-        <a href="/adc/:id/:ano"><button class="btn-button width-button"><i class="fas fa-user-lock"></i></button></a>
-
-        <a href="/teste"><button class="btn-button width-button"><i class="far fa-calendar-alt"></i></button></a>
-        <hr>
+            <a href="./calendario.html">
+                <button class="btn-button width-button">
+                    <i class="far fa-calendar-alt">
+                    </i>
+                </button>
+            </a>
+            <hr>
+        </header>
 
         <!-- Form -->
-        <div class="card border shadow-lg container-personalizado text-center">
+        <div class="card border shadow-lg container-personalizado">
 
             <!-- Form Header -->
-            <div class="text-center text-white">
-                <h5 class="titulo__main">Inserir EVENTO no Calendário</h5>
+            <div>
+                <h5 class="titulo__main">Adicionar Evento</h5>
             </div>
             <br>
 
             <!-- Linha -->
             <div class="container row">
 
-                <form class="mesReferencia">
+                <div>
                     <label for="bday-month"></label>
-                    <input id="bday-month" type="month" name="bday-month" value="2021-06">
-                </form>
+                    <input class="text-center" id="bday-month" type="month" name="bday-month" value="2021-06">
+                </div>
 
                 <!-- Col 1 - Calendário do semestre -->
                 <div class="container text-center col-12">
-                    <table class="table table-bordered card-header-evento">
+                    <table class="table table-bordered evento__card-header">
                         <thead>
                             <tr class="evento__diaSemana">
-                                <th scope="col" width="10%">Domingo</th>
-                                <th scope="col" width="15%">Segunda</th>
-                                <th scope="col" width="15%">Terça</th>
-                                <th scope="col" width="15%">Quarta</th>
-                                <th scope="col" width="15%">Quinta</th>
-                                <th scope="col" width="15%">Sexta</th>
-                                <th scope="col" width="10%">Sábado</th>
+                                <th scope="col" width="14%">Domingo</th>
+                                <th scope="col" width="14%">Segunda</th>
+                                <th scope="col" width="14%">Terça</th>
+                                <th scope="col" width="14%">Quarta</th>
+                                <th scope="col" width="14%">Quinta</th>
+                                <th scope="col" width="14%">Sexta</th>
+                                <th scope="col" width="14%">Sábado</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -113,25 +123,25 @@
                             </tr>
                         </tbody>
                     </table>
-                </div><!-- FIM do calendário do semestre -->
+                </div><!-- FIM do calendário -->
 
                 <!-- Col 2 - Container EVENTO -->
                 <div class="container col-12">
 
                     <!-- Form Evento -->
-                    <form class="form-evento" action="/cadastrandoevento" method="POST">
+                    <form class="evento__form" action="/cadastroevento" method="POST">
 
                         <!-- DATA -->
-                        <label class="labelData">Insira a data:</label>
+                        <label class="evento__labelData">Insira a data:</label>
 
                         <input class="text-center" type="date" id="data" name="data" required="required"
                             aria-describedby="dataHelpBlock">
 
                         <!-- DESCRIÇÃO -->
-                        <label class="labelDescricao">Adicione uma breve descrição:</label>
+                        <label class="evento__labelDescricao">Adicione uma breve descrição:</label>
 
-                        <textarea class="form-control mt-1" id="descricao" data-ls-module="charCounter" maxlength="100"
-                            name="descricao" type="textarea" rows="5" cols="30"
+                        <textarea class="form-control mt-1" id="evento__descricao" data-ls-module="charCounter"
+                            maxlength="100" name="descricao" type="textarea" rows="5" cols="30"
                             placeholder="Insira a descrição da atividade"></textarea>
                         <br>
 
@@ -140,18 +150,18 @@
                             <div class="col-12">
 
                                 <!-- BUTTON SUBMIT -->
-                                <button class="btn-button width-button submit-evento" type="submit">
+                                <button class="btn-button width-button evento__submit" type="submit">
                                     <i class="fas fa-calendar-check"></i>
                                 </button>
 
                                 <!-- BUTTON LIMPAR -->
-                                <button class="btn-button width-button clean-evento" type="clean">
+                                <button class="btn-button width-button evento__clean" type="clean">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                             </div>
                         </div>
+                    </form>
                 </div>
-                </form>
             </div>
             <!-- Fim do container EVENTO -->
         </div>
