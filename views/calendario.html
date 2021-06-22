@@ -31,24 +31,25 @@
 <body>
     <div class="container">
         <br>
-        <a href="/"><button class="btn-button"><img class="btn-button__img" src="../img/home.png"
-                    alt="imagem do usuário"></button></a>
+        <header>
+            <a href="./home.html"><button class="btn-button width-button"><img class="btn-button__img" src="../img/home.png" alt="imagem do usuário"></button></a>
         <hr>
-
+        </header>
+        
         <!-- Principal -->
-        <div class="sessao-calendario">
+        <div class="calendario">
 
             <!-- Header -->
-            <div class="card-header-personalizado text-center">
+            <div class="calendario__personalizado">
                 <h7>Administração</h7>
             </div>
 
             <!-- Calendário do semestre -->
             <div>
-                <table class="card-header-calendar">
+                <table class="calendario__card-header">
                     <thead>
                         <div class="calendario__header">
-                            <div class="row icon-navegacao-mes">
+                            <div class="row calendario__navegacao-mes">
                                 <div class="col-6">
                                     <a href="">
                                         <img src="https://img.icons8.com/carbon-copy/30/ffffff/double-left.png" />
@@ -61,27 +62,26 @@
                                 </div>
                             </div>
                             
-                            <a class="mes" href="">Janeiro</a>
-                            <a class="mes ativo" href="">Fevereiro</a>
-                            <a class="mes" href="">Março</a>
-                            <a class="mes" href="">Abril</a>
-                            <a class="mes" href="">Maio</a>
-                            <a class="mes" href="">Junho</a>
+                            <a class="calendario__mes" href="">Janeiro</a>
+                            <a class="calendario__mes ativo" href="">Fevereiro</a>
+                            <a class="calendario__mes" href="">Março</a>
+                            <a class="calendario__mes" href="">Abril</a>
+                            <a class="calendario__mes" href="">Maio</a>
+                            <a class="calendario__mes" href="">Junho</a>
 
                             <tr class="calendario__diaSemana">
-                                <th class="text-danger" scope="col" width="10%">Domingo</th>
-                                <th scope="col" width="15%">Segunda</th>
-                                <th scope="col" width="15%">Terça</th>
-                                <th scope="col" width="15%">Quarta</th>
-                                <th scope="col" width="15%">Quinta</th>
-                                <th scope="col" width="15%">Sexta</th>
-                                <th class="text-danger" scope="col" width="10%">Sábado</th>
+                                <th class="text-danger" scope="col" width="14%">Domingo</th>
+                                <th scope="col" width="14%">Segunda</th>
+                                <th scope="col" width="14%">Terça</th>
+                                <th scope="col" width="14%">Quarta</th>
+                                <th scope="col" width="14%">Quinta</th>
+                                <th scope="col" width="14%">Sexta</th>
+                                <th class="text-danger" scope="col" width="14%">Sábado</th>
                             </tr>
                         </div>
                     </thead>
 
                     <!-- TIPOS DE CARD:
-                        
                         SECUNDARY: Dia letivo sem evento
                         PRIMARY: Dia letivo com evento
                         DANGER: FDS e feriados
@@ -90,7 +90,7 @@
                         <tr class="semana1">
                             <td></td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">1</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -99,7 +99,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">2</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -108,7 +108,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">3
                                     </div>
                                     <div class="card-body">
@@ -118,7 +118,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">4</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -127,7 +127,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">5</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -136,7 +136,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
                                     <div class="card-header">6</div>
                                     <div class="card-body">
                                         <h5 class="card-title"></h5>
@@ -147,7 +147,7 @@
                         </tr>
                         <tr class="semana2">
                             <td>
-                                <div class="card card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
                                     <div class="card-header">7</div>
                                     <div class="card-body">
                                         <h5 class="card-title"></h5>
@@ -156,7 +156,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">8</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -165,7 +165,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">9</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -174,7 +174,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">10
                                     </div>
                                     <div class="card-body">
@@ -184,7 +184,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">11</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -193,7 +193,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">12</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -202,7 +202,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
                                     <div class="card-header">13</div>
                                     <div class="card-body">
                                         <h5 class="card-title"></h5>
@@ -213,7 +213,7 @@
                         </tr>
                         <tr class="semana3">
                             <td>
-                                <div class="card card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
                                     <div class="card-header">14</div>
                                     <div class="card-body">
                                         <h5 class="card-title"></h5>
@@ -222,7 +222,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
                                     <div class="card-header">15</div>
                                     <div class="card-body">
                                         <h5 class="card-title">NÃO-LETIVO</h5>
@@ -231,7 +231,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
                                     <div class="card-header">16</div>
                                     <div class="card-body">
                                         <h5 class="card-title">NÃO-LETIVO</h5>
@@ -240,7 +240,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">17
                                     </div>
                                     <div class="card-body">
@@ -250,7 +250,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">18</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -259,7 +259,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">19</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -268,7 +268,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
                                     <div class="card-header">20</div>
                                     <div class="card-body">
                                         <h5 class="card-title"></h5>
@@ -279,7 +279,7 @@
                         </tr>
                         <tr class="semana4">
                             <td>
-                                <div class="card card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
                                     <div class="card-header">21</div>
                                     <div class="card-body">
                                         <h5 class="card-title"></h5>
@@ -288,7 +288,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">22</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -297,7 +297,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">23</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -306,7 +306,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">24
                                     </div>
                                     <div class="card-body">
@@ -316,7 +316,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-primary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-primary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">25</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -325,7 +325,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-secondary mb-3" style="max-width: 18rem;">
                                     <div class="card-header">26</div>
                                     <div class="card-body">
                                         <h5 class="card-title">LETIVO</h5>
@@ -334,7 +334,7 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="card card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
                                     <div class="card-header">27</div>
                                     <div class="card-body">
                                         <h5 class="card-title"></h5>
@@ -345,7 +345,7 @@
                         </tr>
                         <tr class="semana5">
                             <td>
-                                <div class="card card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
+                                <div class="card calendario__card-layout text-white bg-danger mb-3" style="max-width: 18rem;">
                                     <div class="card-header">28</div>
                                     <div class="card-body">
                                         <h5 class="card-title"></h5>
