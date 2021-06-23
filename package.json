@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Magila-Ferreira/novoCalendarioTCC/issues"
   },
-  "homepage": "https://github.com/Magila-Ferreira/novoCalendarioTCC#readme"
+  "homepage": "https://github.com/Magila-Ferreira/novoCalendarioTCC#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
