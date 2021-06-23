@@ -258,50 +258,6 @@ app.get('/delevento/:id', (req, res) => {
   })
 })
 
-
-
-
-
-
-//================================================================================================ TESTES 
-app.get('/teste', (req, res) => {
-  Evento.findAll({}).then((eventos) => {
-    res.render('teste', { eventos: eventos })
-  }).catch((erro) => {
-    res.send("Houve um erro:" + erro)
-  })
-})
-
-//================================================================================================ TESTES LUCAS 
-app.get('/testelucas', (req, res) => {
-  Evento.findAll({}).then((eventos) => {
-    res.render('testelucas', { eventos: eventos })
-  }).catch((erro) => {
-    res.send("Houve um erro:" + erro)
-  })
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ******************************************************************
 // ouvir uma porta
 app.listen(8080)
