@@ -25,11 +25,19 @@ app.get('/admin', (req, res) => {
 })
 
 app.post('/validarLogin', (req, res) => {
-    res.redirect('evento')
+    var RM = req.body.RM;
+    var senha = req.body.senha;
+    var login = RM + senha;
+
+    if (login === '1905932020') {
+        res.redirect('evento');
+    } else {
+        res.redirect('/');
+    }
 })
 
 app.get('/evento', (req, res) => {
-    res.render('evento')
+    res.render('evento');
 })
 
 app.post('/salvarEvento', (req, res) => {
