@@ -171,7 +171,7 @@ em {
 .admin__img-locked {
     border-radius: 100px;
     align-items: center;
-    margin: 50px auto 20px auto;
+    margin: 50px auto 0 auto;
 }
 
 .admin__img-locked___tamanho {
@@ -180,7 +180,7 @@ em {
 }
 
 .admin__form {
-    padding: 20px 10px;
+    padding: 5px 10px;
     max-width: 700px;
 }
 
@@ -188,12 +188,11 @@ em {
     max-width: 200px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
 }
 
 .admin__button {
     min-width: 5rem;
-    margin-top: 20px;
+    margin-top: 40px;
 }/***** Fim ADMIN *****/
 
 

@@ -28,7 +28,8 @@
 <body class="admin">
     <header class="container">
         <br>
-        <a href="./home.html"><button class="btn-button width-button"><img class="btn-button__img" src="../img/home.png" alt="imagem do usuário"></button></a>
+        <a href="/"><button class="btn-button width-button"><img class="btn-button__img" src="../img/home.png"
+                    alt="imagem do usuário"></button></a>
         <hr>
     </header>
 
@@ -50,9 +51,10 @@
 
                     <!-- Container Formulário -->
                     <div class="container admin__form">
-                        <form action="./evento.html" method="POST">
+                        <form id="form-verificacao" action="/validarLogin" method="POST">
                             <div class="admin__form-group" aling="text-center">
                                 <div class="col-sm-12">
+                                    <label for="RM"></label>
                                     <input data-ls-module="charCounter" maxlength="6" name="RM" type="text"
                                         class="form-control numerico text-center" id="inputPassword" placeholder="RM"
                                         required="required">
@@ -60,13 +62,15 @@
                             </div>
                             <div class="admin__form-group">
                                 <div class="col-sm-12">
-                                    <input data-ls-module="charCounter" maxlength="4" name="senha" type="password"
-                                        class="form-control numerico text-center" id="inputPassword3"
-                                        placeholder="Senha" required="required">
+                                    <label for="senha"></label>
+                                    <input id="senha" name="senha" type="password" data-ls-module="charCounter"
+                                        maxlength="4" class="form-control numerico text-center" placeholder="Senha"
+                                        required="required">
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <button type="submit" class="btn-button admin__button">Logar</button>
+                                <button id="verificar-senha" type="submit"
+                                    class="btn-button admin__button">Logar</button>
                             </div>
                         </form>
                     </div> <!-- Fim do Formulário -->
