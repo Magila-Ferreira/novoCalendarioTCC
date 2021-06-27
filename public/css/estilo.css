@@ -65,13 +65,13 @@ footer {
 }
 
 .btn-icon {
-    color: #000050;
+    max-width: 30px;
+    margin-top: 15px;
 }
 
 .btn-icon:hover {
-    color: #0dcaf0;
-    background: #000;
-    padding: 10px;
+    background: #0dcaf0;
+    padding: 2px;
     transition: 0.8s;
     border-radius: 10px;
 }
@@ -239,16 +239,8 @@ em {
     max-height: 70px;
 }
 
-.evento__submit {
-    color: #00ff00;
-}
-
-.evento__submit:hover, .evento__clean:hover {
-    color: #fff;
-}
-
-.evento__clean {
-    color: #ff0000;
+.evento__button:hover {
+    min-height: 35px;
 }/***** Fim EVENTO *****/
 
 
