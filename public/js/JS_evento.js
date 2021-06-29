@@ -1,3 +1,15 @@
-var eventoCalendario = document.querySelector(".evento__card-header tbody");
+var eventoCalendario = document.querySelector(".evento__calendario");
 
-console.log(eventoCalendario);
+var eventoForm = eventoCalendario.querySelector(".evento__form");
+
+var defineData = eventoForm.querySelector(".defineData");
+
+var descricao = eventoForm.querySelector("#evento__descricao");
+
+var botaoLimpar = eventoForm.querySelector("#limpar");
+
+var botaoEnviar = eventoForm.querySelector("#enviar");
+
+
+
+

@@ -49,11 +49,11 @@
             <br>
 
             <!-- Linha -->
-            <div class="container row">
+            <div class="container row evento__calendario">
 
-                <div>
+                <div class="evento__define-mes">
                     <label for="bday-month"></label>
-                    <input class="text-center" id="bday-month" type="month" name="bday-month" value="2021-06">
+                    <input class="text-center" id="mes" type="mes" name="mes" value="Junho - 2021">
                 </div>
 
                 <!-- Col 1 - Calendário do semestre -->
@@ -71,15 +71,51 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!--<tr>
+                            <tr class="semana1">
                                 <td></td>
-                                <td>01</td>
-                                <td>02</td>
-                                <td>03</td>
-                                <td>04</td>
-                                <td>05</td>
-                                <td>06</td>
-                            </tr>-->
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="semana2">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="semana3">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="semana4">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="semana5">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div><!-- FIM do calendário -->
@@ -93,7 +129,7 @@
                         <!-- DATA -->
                         <label class="evento__labelData">Insira a data:</label>
 
-                        <input class="text-center" type="date" id="data" name="data" required="required"
+                        <input class="text-center defineData" type="date" id="data" name="data" required="required"
                             aria-describedby="dataHelpBlock">
 
                         <!-- DESCRIÇÃO -->
@@ -109,12 +145,12 @@
                             <div class="col-12">
 
                                 <!-- BUTTON LIMPAR -->
-                                <button class="btn-button width-button" type="clean">
+                                <button class="btn-button width-button" id="limpar" type="clean">
                                     <img class="btn-button__img evento__button" src="/img/trash.png"></i>
                                 </button>
 
                                 <!-- BUTTON SUBMIT -->
-                                <button class="btn-button width-button" type="submit">
+                                <button class="btn-button width-button" id="enviar" type="submit">
                                     <img class="btn-button__img evento__button" src="/img/submit.png"></i>
                                 </button>
 

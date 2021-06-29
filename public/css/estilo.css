@@ -212,7 +212,7 @@ em {
     font-size: 14px;
     font-family: 'Geneva';
     width: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .evento__diaSemana {
@@ -224,8 +224,7 @@ em {
 
 .evento__form {
     color: #fff;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
     padding: 5px;
     max-width: 300px;
     max-height: 400px;
