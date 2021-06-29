@@ -65,15 +65,15 @@ footer {
 }
 
 .btn-icon {
+    color: #000050;
     max-width: 30px;
     margin-top: 15px;
 }
 
 .btn-icon:hover {
-    background: #0dcaf0;
+    color: #0dcaf0;
     padding: 2px;
     transition: 0.8s;
-    border-radius: 10px;
 }
 
 .bg-dark {
@@ -117,6 +117,10 @@ footer {
 header .btn-icon {
     font-size: 90px;
     margin-right: 20px;
+}
+
+strong {
+    margin-left: 50px;
 }
 
 .home__card-tip i {
