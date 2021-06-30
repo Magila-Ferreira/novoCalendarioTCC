@@ -212,11 +212,11 @@ em {
     font-size: 14px;
     font-family: 'Geneva';
     width: 80%;
-    margin: 10px auto;
+    margin: 20px auto 0 auto;
 }
 
 .evento__diaSemana {
-    background: #343a40;
+    background: #212529;
     border: solid 1px #c0c0c0;
     font-style: italic;
     color: #0dcaf0;
