@@ -207,6 +207,15 @@ em {
     height: auto;
 }
 
+.evento__mes {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-dropdown {
+    width: 200px;
+}
+
 .evento__card-header {
     color: #fff;
     font-size: 14px;
@@ -230,12 +239,8 @@ em {
     max-height: 400px;
 }
 
-.evento__labelData, .evento__labelDescricao {
+.evento__labelData {
     display: block;
-}
-
-.evento__labelDescricao {
-    margin-top: 10px;
 }
 
 #evento__descricao {
