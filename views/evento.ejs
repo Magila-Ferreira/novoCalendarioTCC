@@ -41,7 +41,7 @@
 
         <!-- Container-personalizado -->
         <div class="card border shadow-lg container-personalizado">
-            
+
             <div>
                 <h5 class="titulo__main">Adicionar Evento</h5>
             </div>
@@ -51,14 +51,17 @@
             <div class="container row evento__dropdown-mes">
                 <div class="evento__define-mes">
                     <div class="input-group mb-3 evento__mes btn-dropdown">
-                        <label class="input-group-text" for="inputGroupSelect01">MÊS</label>
-                        <select class="form-select btn-secondary" id="inputGroupSelect01">
-                            <option id="mes" value="1" selected><a href="#">JANEIRO</a></option>
-                            <option id="mes" value="2"><a href="#">FEVEREIRO</a></option>
-                            <option id="mes" value="3"><a href="#">MARÇO</a></option>
-                            <option id="mes" value="4"><a href="#">ABRIL</a></option>
-                            <option id="mes" value="5"><a href="#">MAIO</a></option>
-                            <option id="mes" value="6"><a href="#">JUNHO</a></option>
+
+                        <select onchange="selectMes(this.value)" name="selectMes" class="form-select btn-secondary" id="selectMes"
+                            placeholder="Selecione:">
+
+                            <option value=""></option>
+                            <option value="1">JANEIRO</option>
+                            <option value="2">FEVEREIRO</option>
+                            <option value="3">MARÇO</option>
+                            <option value="4">ABRIL</option>
+                            <option value="5">MAIO</option>
+                            <option value="6">JUNHO</option>
                         </select>
                     </div>
 
@@ -77,60 +80,7 @@
                                 </tr>
                             </thead>
                             <tbody id="evento__calendario">
-                                <tr class="semana">
-                                    <td id="L1C1"></td>
-                                    <td id="L1C2"></td>
-                                    <td id="L1C3"></td>
-                                    <td id="L1C4"></td>
-                                    <td id="L1C5"></td>
-                                    <td id="L1C6"></td>
-                                    <td id="L1C7"></td>
-                                </tr>
-                                <tr class="semana">
-                                    <td id="L2C1"></td>
-                                    <td id="L2C2"></td>
-                                    <td id="L2C3"></td>
-                                    <td id="L2C4"></td>
-                                    <td id="L2C5"></td>
-                                    <td id="L2C6"></td>
-                                    <td id="L2C7"></td>
-                                </tr>
-                                <tr class="semana">
-                                    <td id="L3C1"></td>
-                                    <td id="L3C2"></td>
-                                    <td id="L3C3"></td>
-                                    <td id="L3C4"></td>
-                                    <td id="L3C5"></td>
-                                    <td id="L3C6"></td>
-                                    <td id="L3C7"></td>
-                                </tr>
-                                <tr class="semana">
-                                    <td id="L4C1"></td>
-                                    <td id="L4C2"></td>
-                                    <td id="L4C3"></td>
-                                    <td id="L4C4"></td>
-                                    <td id="L4C5"></td>
-                                    <td id="L4C6"></td>
-                                    <td id="L4C7"></td>
-                                </tr>
-                                <tr class="semana">
-                                    <td id="L5C1"></td>
-                                    <td id="L5C2"></td>
-                                    <td id="L5C3"></td>
-                                    <td id="L5C4"></td>
-                                    <td id="L5C5"></td>
-                                    <td id="L5C6"></td>
-                                    <td id="L5C7"></td>
-                                </tr>
-                                <tr class="semana">
-                                    <td id="L6C1"></td>
-                                    <td id="L6C2"></td>
-                                    <td id="L6C3"></td>
-                                    <td id="L6C4"></td>
-                                    <td id="L6C5"></td>
-                                    <td id="L6C6"></td>
-                                    <td id="L6C7"></td>
-                                </tr>
+
                             </tbody>
                         </table>
                     </div><!-- FIM do calendário -->
@@ -187,15 +137,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
+        
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
         </script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
         </script>
 
     <!-- Meu Script -->
-    <script src="/js/JS_evento.js">
+    <script src="/js/JS_janeiro.js">
     </script>
 </body>
 

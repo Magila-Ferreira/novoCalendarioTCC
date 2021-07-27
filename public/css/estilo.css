@@ -81,6 +81,10 @@ footer {
     background-color: #000;
 }
 
+.bg-black {
+    background: #000;
+}
+
 .bg-primary {
     background: #304070 !important;
 }
@@ -93,6 +97,10 @@ footer {
     background: #703040 !important;;
 }
 
+.bg-white {
+    background: #fff;
+}
+
 .text-white {
     color:#fff !important;
 }
@@ -101,6 +109,10 @@ footer {
     color: #904040 !important;
 }
 
+.text-dark {
+    color: #212529;
+    background: #c0c0c0;
+}
 
 /* HOME */
 .home {
