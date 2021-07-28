@@ -5,98 +5,50 @@ var meses = document.getElementById("selectMes");
 
 function selectMes(valor) {
 
-    // Limpando o calendário
-    calendario.innerHTML = "";
+    if (valor === '1') { 
 
-    if (valor === '1') {
+        for (var n = 0; n < 6; n++) {
 
-        // Chamando a função montaCalendario janeiro
-        var janeiro = montaCalendarioSeis(calendario);        
+            // Variável que criará as tr  
+            var semanaTr = document.createElement("tr");
+
+            // Relaciona cada tr como filha do calendário
+            calendario.appendChild(semanaTr);
+
+            // Variável que armazena uma tr
+            for (var i = 0; i < 7; i++) {
+
+                // Variável que cria cada td
+                var diaTd = document.createElement("td");
+
+                // Relaciona cada td como filha da tr
+                semanaTr.appendChild(diaTd);
+            }
+        }
 
     } else if (valor === '2') {
 
-        // Chama a função montaCalendario fevereiro
-        var fevereiro = montaCalendarioCinco(calendario);
-        
-    } else if (valor === '3') {
+        for (var n = 0; n < 2; n++) {
 
-        // Chama a função montaCalendario março
-        var marco = montaCalendarioCinco(calendario);
+            // Variável que criará as tr  
+            var semanaTr = document.createElement("tr");
 
-    } else if (valor === '4') {
+            // Relaciona cada tr como filha do calendário
+            calendario.appendChild(semanaTr);
 
-        // Chama a função montaCalendario abril
-        var abril = montaCalendarioCinco(calendario);
+            // Variável que armazena uma tr
+            for (var i = 0; i < 7; i++) {
 
-    } else if (valor === '5') {
+                // Variável que cria cada td
+                var diaTd = document.createElement("td");
 
-        // Chama a função montaCalendario maio
-        var maio = montaCalendarioSeis(calendario);
-
-    } else {
-
-        // Chama a função montaCalendario junho
-        var junho = montaCalendarioCinco(calendario);
+                // Relaciona cada td como filha da tr
+                semanaTr.appendChild(diaTd);
+            }
+        }
     }
-
     console.log("O mês selecionado foi: " + valor);
 }
-
-// Funções:
-
-// *****    Montar calendário:      *****
-
-// Cinco Semanas:
-function montaCalendarioCinco(cinco) {
-    for (var n = 0; n < 5; n++) {
-
-        // Variável que criará as tr  
-        var semanaTr = document.createElement("tr");
-
-        // Relaciona cada tr como filha do calendário
-        calendario.appendChild(semanaTr);
-
-        // Variável que armazena uma tr
-        for (var i = 0; i < 7; i++) {
-
-            // Variável que cria cada td
-            var diaTd = document.createElement("td");
-
-            // Relaciona cada td como filha da tr
-            semanaTr.appendChild(diaTd);
-        }
-    }
-    return cinco;
-};
-
-// Seis Semanas:
-function montaCalendarioSeis(seis) {
-    for (var n = 0; n < 6; n++) {
-
-        // Variável que criará as tr  
-        var semanaTr = document.createElement("tr");
-
-        // Relaciona cada tr como filha do calendário
-        calendario.appendChild(semanaTr);
-
-        // Variável que armazena uma tr
-        for (var i = 0; i < 7; i++) {
-
-            // Variável que cria cada td
-            var diaTd = document.createElement("td");
-
-            // Relaciona cada td como filha da tr
-            semanaTr.appendChild(diaTd);
-        }
-    }
-    return seis;
-};
-
-
-
-
-
-
 
 
 

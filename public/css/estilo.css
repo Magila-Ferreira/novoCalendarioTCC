@@ -114,6 +114,11 @@ footer {
     background: #c0c0c0;
 }
 
+.text-selecao {
+    color: #000;
+    background: #c0c0c0;
+}
+
 /* HOME */
 .home {
     min-width: 100%;
