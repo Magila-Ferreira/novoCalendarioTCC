@@ -1,19 +1,8 @@
-<html>
-    <select onchange="javascript:selectMes(this);">
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-    </select>
-</html>
-
 // Seleciona a página inteira  
-var eventoCalendario = document.querySelector(".evento__dropdown-mes");
+var calendario = document.querySelector(".evento__dropdown-mes");
 
 // Seleciona todos os meses
-var defineMes = eventoCalendario.querySelector("select");
+var defineMes = calendario.querySelector("select");
 
 // Variável calendar armazena as td limpas
 var calendar = document.querySelector("#evento__calendario");
@@ -22,7 +11,7 @@ var calendar = document.querySelector("#evento__calendario");
 var table = document.querySelector("tbody");
 
 // Seleciona todos os campos 'td' 
-var tdDia = eventoCalendario.querySelectorAll("td");
+var tdDia = calendario.querySelectorAll("td");
 
 // Início do mês
 var dia = 1;
@@ -137,3 +126,31 @@ function selectMes() {
         table.appendChild(calendar);
     }      
 }
+
+/*
+
+// *****    Populando o calendário:      *****
+// Variável que armazenará o calendário.html
+var janeiro = montaCalendarioSeis(calendario);
+
+// Variável que armazenará o conjunto de td
+var dia = janeiro.querySelectorAll("td");
+
+// Função que montará o calendário
+function populandoJaneiro(calendario) {
+
+    // Laço que percorrerá todas as td
+    for(var d = 0; d < dia.length; d++) {
+        
+        // Variável que armazenará cada dia separadamente
+        var inicioMes = 1;
+
+        if(d >= 4 && d <= 35) {
+            dia.textContent = inicioMes;
+            console.log(dia);
+            inicioMes++;
+
+            return calendario;
+        }
+    };
+}; */
