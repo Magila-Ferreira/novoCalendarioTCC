@@ -93,8 +93,12 @@ footer {
     background: #343a40 !important;;
 }
 
+.bg-secondary-dark {
+    background: #212529 !important;
+}
+
 .bg-danger {
-    background: #703040 !important;;
+    background: #401020 !important;;
 }
 
 .bg-white {
@@ -107,6 +111,10 @@ footer {
 
 .text-danger {
     color: #904040 !important;
+}
+
+.text-red {
+    color: #b05050 !important;
 }
 
 .text-dark {
@@ -230,7 +238,17 @@ em {
 }
 
 .btn-dropdown {
-    width: 200px;
+    width: 250px;
+}
+
+.form-select {
+    background: #212529;
+    color: #ddd;
+}
+
+.form-select:hover {
+    background: #343a40;
+    color: #fff;
 }
 
 .evento__card-header {
@@ -242,10 +260,17 @@ em {
 }
 
 .evento__diaSemana {
-    background: #212529;
+    background: #000;
     border: solid 1px #c0c0c0;
     font-style: italic;
-    color: #0dcaf0;
+    font-size: 16px;
+    color: #ddd;
+}
+
+#evento__calendario {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #ddd;
 }
 
 .evento__form {
@@ -258,6 +283,10 @@ em {
 
 .evento__labelData {
     display: block;
+}
+
+.evento__labelDescricao {
+    margin-top: 20px;
 }
 
 #evento__descricao {

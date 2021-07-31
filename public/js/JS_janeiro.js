@@ -32,12 +32,11 @@ function selectMes(valor) {
 
         populandoMaio(calendario);
 
-        // Exceção para chamar o mês de Junho
-    } else {
+    } else if (valor === '6') {
 
         populandoJunho(calendario);
-    }
 
+    }
     // Imprime o valor do mês selecionado na select
     //console.log("O mês selecionado foi: " + valor);
 }
@@ -114,6 +113,27 @@ function populandoJaneiro(janeiro) {
             // Popula a tdDia do laço com o valor do dia
             tdDia.textContent = dia;
 
+            // *****    Estilizando o calendário:      *****
+
+            // Condicional que verifica as td correspondentes aos FDS e feriados de janeiro, estilizando-as.  
+            switch (tdDia.textContent) {
+                case '1':
+                case '2':
+                case '3':
+                case '9':
+                case '10':
+                case '16':
+                case '17':
+                case '23':
+                case '24':
+                case '30':
+                case '31':
+                    tdDia.classList.add("bg-danger");
+                    break;
+                default:
+                    tdDia.classList.add("bg-secondary-dark");
+            }
+
             // Atualiza o valor do dia a cada volta do laço
             dia++;
         }
@@ -131,9 +151,27 @@ function populandoFevereiro(fevereiro) {
 
     for (var i = 0; i < tdDias.length; i++) {
         var tdDia = tdDias[i];
- 
+
         if (i > 0 && i < 29) {
             tdDia.textContent = dia;
+
+            switch (tdDia.textContent) {
+                case '6':
+                case '7':
+                case '13':
+                case '14':
+                case '15':
+                case '16':
+                case '17':
+                case '20':
+                case '21':
+                case '27':
+                case '28':
+                    tdDia.classList.add("bg-danger");
+                    break;
+                default:
+                    tdDia.classList.add("bg-secondary-dark");
+            }
             dia++;
         }
     }
@@ -151,6 +189,21 @@ function populandoMarco(marco) {
 
         if (i > 0 && i < 32) {
             tdDia.textContent = dia;
+
+            switch (tdDia.textContent) {
+                case '6':
+                case '7':
+                case '13':
+                case '14':
+                case '20':
+                case '21':
+                case '27':
+                case '28':
+                    tdDia.classList.add("bg-danger");
+                    break;
+                default:
+                    tdDia.classList.add("bg-secondary-dark");
+            }
             dia++;
         }
     }
@@ -168,6 +221,24 @@ function populandoAbril(abril) {
 
         if (i > 3 && i < 34) {
             tdDia.textContent = dia;
+
+            switch (tdDia.textContent) {
+                case '2':
+                case '3':
+                case '4':
+                case '8':
+                case '10':
+                case '11':
+                case '17':
+                case '18':
+                case '21':
+                case '24':
+                case '25':
+                    tdDia.classList.add("bg-danger");
+                    break;
+                default:
+                    tdDia.classList.add("bg-secondary-dark");
+            }
             dia++;
         }
     }
@@ -185,6 +256,23 @@ function populandoMaio(maio) {
 
         if (i > 5 && i < 37) {
             tdDia.textContent = dia;
+
+            switch (tdDia.textContent) {
+                case '1':
+                case '2':
+                case '8':
+                case '9':
+                case '15':
+                case '16':
+                case '22':
+                case '23':
+                case '29':
+                case '30':
+                    tdDia.classList.add("bg-danger");
+                    break;
+                default:
+                    tdDia.classList.add("bg-secondary-dark");
+            }
             dia++;
         }
     }
@@ -202,9 +290,25 @@ function populandoJunho(junho) {
 
         if (i > 1 && i < 32) {
             tdDia.textContent = dia;
+
+            switch (tdDia.textContent) {
+                case '3':
+                case '5':
+                case '6':
+                case '12':
+                case '13':
+                case '19':
+                case '20':
+                case '26':
+                case '27':
+                    tdDia.classList.add("bg-danger");
+                    break;
+                    default:
+                        tdDia.classList.add("bg-secondary-dark");
+            }
             dia++;
         }
-    } 
+    }
     return junho;
 }
 

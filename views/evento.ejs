@@ -43,88 +43,86 @@
         <div class="card border shadow-lg container-personalizado">
 
             <div>
-                <h5 class="titulo__main">Adicionar Evento</h5>
+                <h5 class="titulo__main">Eventos do mês:</h5>
             </div>
             <br>
 
             <!-- Select mês -->
-            <div class="container row evento__dropdown-mes">
-                <div class="evento__define-mes">
-                    <div class="input-group mb-3 evento__mes btn-dropdown">
+            <div class="container row">
 
-                        <select onchange="selectMes(this.value)" name="selectMes" class="form-select btn-secondary"
-                            id="selectMes">
+                <div class="input-group mb-3 evento__mes btn-dropdown">
+                    <select onchange="selectMes(this.value)" name="selectMes" class="form-select btn-secondary"
+                        id="selectMes">
 
-                            <option value="" class="text-selecao">SELECIONE:</option>
-                            <option value="1">Janeiro</option>
-                            <option value="2">Fevereiro</option>
-                            <option value="3">Março</option>
-                            <option value="4">Abril</option>
-                            <option value="5">Maio</option>
-                            <option value="6">Junho</option>
-                        </select>
-                    </div>
-
-                    <!-- Calendário do mes -->
-                    <div class="container text-center col-12">
-                        <table class="table table-bordered evento__card-header">
-                            <thead>
-                                <tr class="evento__diaSemana">
-                                    <th scope="col" width="14%">Domingo</th>
-                                    <th scope="col" width="14%">Segunda</th>
-                                    <th scope="col" width="14%">Terça</th>
-                                    <th scope="col" width="14%">Quarta</th>
-                                    <th scope="col" width="14%">Quinta</th>
-                                    <th scope="col" width="14%">Sexta</th>
-                                    <th scope="col" width="14%">Sábado</th>
-                                </tr>
-                            </thead>
-                            <tbody id="evento__calendario">
-
-                            </tbody>
-                        </table>
-                    </div><!-- FIM do calendário -->
-
-                    <!-- Container EVENTO -->
-                    <div class="container col-12">
-
-                        <!-- Form Evento -->
-                        <form class="evento__form" action="/salvarEvento" method="POST">
-
-                            <!-- DATA -->
-                            <label class="evento__labelData">Insira a data:</label>
-
-                            <input class="text-center defineData" type="date" id="data" name="data" required="required"
-                                aria-describedby="dataHelpBlock">
-
-                            <!-- DESCRIÇÃO -->
-                            <label class="evento__labelDescricao">Adicione uma breve descrição:</label>
-
-                            <textarea class="form-control mt-1" id="evento__descricao" data-ls-module="charCounter"
-                                maxlength="100" name="descricao" type="textarea" rows="5" cols="30"
-                                placeholder="Insira a descrição da atividade"></textarea>
-                            <br>
-
-                            <!-- BUTTONS -->
-                            <div class="row">
-                                <div class="col-12">
-
-                                    <!-- BUTTON LIMPAR -->
-                                    <button class="btn-button width-button" id="limpar" type="clean">
-                                        <img class="btn-button__img evento__button" src="/img/trash.png"></i>
-                                    </button>
-
-                                    <!-- BUTTON SUBMIT -->
-                                    <button class="btn-button width-button" id="enviar" type="submit">
-                                        <img class="btn-button__img evento__button" src="/img/submit.png"></i>
-                                    </button>
-
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                        <option value="" selected class="text-selecao">SELECIONE O MÊS:</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                    </select>
                 </div>
-                <!-- Fim do container EVENTO -->
+
+                <!-- Calendário do mes -->
+                <div class="container text-center col-12">
+                    <table class="table table-bordered evento__card-header">
+                        <thead>
+                            <tr class="evento__diaSemana">
+                                <th scope="col" class="text-red" width="14%">Domingo</th>
+                                <th scope="col" width="14%">Segunda</th>
+                                <th scope="col" width="14%">Terça</th>
+                                <th scope="col" width="14%">Quarta</th>
+                                <th scope="col" width="14%">Quinta</th>
+                                <th scope="col" width="14%">Sexta</th>
+                                <th scope="col" class="text-red" width="14%">Sábado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="evento__calendario">
+
+                        </tbody>
+                    </table>
+                </div><!-- FIM do calendário -->
+
+                <!-- Container EVENTO -->
+                <div class="container col-12">
+
+                    <h5 class="mb-1 mt-5 titulo__main">Adicionar Evento:</h5>
+
+                    <!-- Form Evento -->
+                    <form class="evento__form" action="/salvarEvento" method="POST">
+
+                        <!-- DATA -->
+                        <label class="evento__labelData">Insira a data:</label>
+
+                        <input class="text-center defineData" type="date" id="data" name="data" required="required" aria-describedby="dataHelpBlock">
+
+                        <!-- DESCRIÇÃO -->
+                        <label class="evento__labelDescricao">Adicione uma breve descrição:</label>
+
+                        <textarea class="form-control mt-1" id="evento__descricao" data-ls-module="charCounter"
+                            maxlength="100" name="descricao" type="textarea" rows="5" cols="30"
+                            placeholder="Insira a descrição da atividade" required="required" aria-describedby="dataHelpBlock"></textarea>
+                        <br>
+
+                        <!-- BUTTONS -->
+                        <div class="row">
+                            <div class="col-12">
+
+                                <!-- BUTTON LIMPAR -->
+                                <button class="btn-button width-button" id="limpar" type="clean">
+                                    <img class="btn-button__img evento__button" src="/img/trash.png"></i>
+                                </button>
+
+                                <!-- BUTTON SUBMIT -->
+                                <button class="btn-button width-button" id="enviar" type="submit">
+                                    <img class="btn-button__img evento__button" src="/img/submit.png"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
             <!-- FIM da linha -->
         </div>
@@ -132,26 +130,23 @@
     </div>
     <!-- FIM do calendário -->
 
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous">
-                </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
 
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                crossorigin="anonymous">
-                </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
 
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                crossorigin="anonymous">
-                </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
 
-            <!-- Meu Script -->
-            <script src="/js/JS_janeiro.js">
-            </script>
+    <!-- Meu Script -->
+    <script src="/js/JS_janeiro.js">
+    </script>
 </body>
 
 </html>
