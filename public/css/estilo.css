@@ -267,6 +267,11 @@ em {
     color: #ddd;
 }
 
+/* Classe usada no JS */ 
+.thead-invisivel { 
+    display: none;
+}
+
 #evento__calendario {
     font-size: 16px;
     font-weight: bolder;

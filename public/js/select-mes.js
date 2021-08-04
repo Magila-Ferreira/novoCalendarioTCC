@@ -1,8 +1,16 @@
 // Variável que armazena todo o calendário
 var calendario = document.querySelector("#evento__calendario");
 
+// Variável que armazena o cabeçalho da tabela
+var thead = document.querySelector(".evento__diaSemana");
+
 // Variável que armazena o select
 var meses = document.getElementById("selectMes");
+
+//var selected = document.querySelector(".text-selecao");
+
+// Adiciona a classe invisível ao thead da tabela 
+thead.classList.add("thead-invisivel");
 
 // Função que chama o calendário correspondente ao mês do select
 function selectMes(valor) {
@@ -13,32 +21,40 @@ function selectMes(valor) {
     // Condicional para chamar o mês de Janeiro
     if (valor === '1') {
 
+        // Remove a classe invisível da thead da tabela
+        removeInvisivel(thead);
+
         // Chama a função populando o calendário
         populandoJaneiro(calendario);
 
     } else if (valor === '2') {
 
+        removeInvisivel(thead);
         populandoFevereiro(calendario);
 
     } else if (valor === '3') {
 
+        removeInvisivel(thead);
         populandoMarco(calendario);
 
     } else if (valor === '4') {
 
+        removeInvisivel(thead);
         populandoAbril(calendario);
 
     } else if (valor === '5') {
 
+        removeInvisivel(thead);
         populandoMaio(calendario);
 
     } else if (valor === '6') {
 
+        removeInvisivel(thead);
         populandoJunho(calendario);
 
+    } else {
+        thead.classList.add("thead-invisivel");
     }
-    // Imprime o valor do mês selecionado na select
-    //console.log("O mês selecionado foi: " + valor);
 }
 
 // Funções:
@@ -310,6 +326,13 @@ function populandoJunho(junho) {
         }
     }
     return junho;
+}
+
+// Função de remoção da classe invisível
+function removeInvisivel(thead) {
+    thead.classList.remove("thead-invisivel");
+
+    return thead;
 }
 
 /*console.log("O indice é: " + meses.selectedIndex);
